@@ -67,7 +67,7 @@ def password_get():
     if key == getpass.getpass(prompt='Again:', stream=None):
         return key
     else:
-        raise Exception('Passwords doesn't match\n')
+        raise Exception("Passwords doesn't match\n")
 
 
 def process_args():
@@ -90,7 +90,7 @@ def process_args():
     args = parser.parse_args()
 
     if args.encrypt and args.decrypt:
-        raise Exception('You can't use encrypt and decrypt together')
+        raise Exception("You can't use encrypt and decrypt together")
 
     return args
 
